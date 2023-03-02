@@ -1,26 +1,30 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    font-family: roboto, sans-serif;
+    /* align-items: stretch; */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     background-color: #1f2937;
     font-size: 24px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 300px;
+    /* justify-content: center; */
+    padding: 5px 200px;
     align-items: center;
 }
 
 .header-logo {
+    margin-right: auto;
     color: #e5e7eb;
     font-weight: 800;
 }
 
 ul {
     display: flex;
+    margin-left: auto;
     list-style-type: none;
     /* justify-content: space-evenly; */
     gap: 20px;
@@ -35,15 +39,15 @@ a {
 
 .main-section {
     display: flex;
-    justify-content: space-between;
-    padding: 100px 300px;
+    justify-content: center;
     align-items: center;
+    padding: 90px;
     background-color: #1f2937;
 }
 
 .main-section > img {
-    width: 600px;
-    height: 280px;
+    width: 500px;
+    height: 350px;
     border: 2px solid rgb(19, 51, 99);
     border-radius: 10px;
 }
@@ -60,9 +64,10 @@ button {
 
 .main-section-text {
     display: flex;
+    flex-basis: 400px;
     flex-direction: column;
-    align-items: start;
-    gap: 10px;
+    text-align: left;
+    margin-right: 50px;
 }
 
 .main-text {
@@ -83,7 +88,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    align-items: center;
+    /* align-items: center; */
     background-color: white;
     gap: 50px;
     padding: 50px 0px;
@@ -92,12 +97,14 @@ button {
 .info-title {
     font-size: 36px;
     font-weight: 800;
+    text-align: center;
     color: #1f2937;
 }
 
 .info-container {
     display: flex;
     flex: 1;
+    padding: 10px 200px;
     justify-content: space-around;
     gap: 100px;
 }
@@ -128,10 +135,9 @@ button {
 .quote-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: #d2d7dd;
-    padding: 60px 0px;
+    padding: 60px 200px;
 }
 
 .quote-section >
@@ -139,13 +145,11 @@ button {
     font-style: italic;
     font-size: 36px;
     font-weight: 250;
-    max-width: 500px;
 }
 
 .quote-section >
 .qoute-author {
-    display: flex;
-    margin-left: 300px;
+    text-align: right;
     font-weight: 700;
 }
 
